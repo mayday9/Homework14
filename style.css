@@ -1,0 +1,272 @@
+@import url("css/normalize.css");
+
+*,
+*::before,
+*::after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.clearfix:after,
+.header:after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+.page{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	color: #444;
+	line-height: 1.375;
+	font-size: 1rem;
+	margin: 0;
+}
+
+.header{
+	padding: 1.875rem 0;
+	border-bottom: 1px solid #ccc;
+}
+
+.page__cell{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.header__phone-number{
+	font-weight: bold;
+	font-size: 1.5625rem;
+	color: #000;
+	text-decoration: none;
+}
+
+.link{
+	color: #444;
+}
+
+.link:hover{
+	color: #f44336;
+	transition: 0.5s;
+}
+
+.header__email-address{
+	text-decoration: none;
+}
+
+.header__logo{
+	float: left;
+}
+
+.header__contact{
+	float: right;
+	text-align: right;
+}
+
+/************End Header**********/
+/*********************************/
+/**************Menu***************/
+
+.nav{
+	font-size: 1.1875rem;
+}
+.nav__list{
+	list-style: none;
+	margin:0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	padding: 1.3rem;
+}
+
+.nav__link{
+	text-decoration: none;
+	font-weight: normal;
+	color: #000;
+}
+
+.nav__link:hover{
+	color: #f88e86;
+}
+
+/************End Menu**********/
+/*********************************/
+/**********Slider*************/
+
+.slider__item{
+	padding-top: 33.7%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.slider .owl-dots .owl-dot span{
+	background: #fff;
+	border: 1px solid #ccc;
+	width: 1rem;
+	height: 1rem;
+	display: block;
+	margin: 0 0.4rem;
+}
+
+.slider .owl-dots .owl-dot.active span{
+	background: #000;
+	border-color: #000;
+}
+
+.slider .owl-dots .owl-dot:hover span{
+	background: #000;
+	border-color: #000;
+}
+.slider .owl-dots{
+	position: absolute;
+	text-align: center;
+	left: 0;
+	right: 0;
+	bottom: 0.5rem;
+}
+
+/************End Slider**********/
+/*********************************/
+/**********About US *************/
+
+.section__headline{
+	text-align: center;
+	font-size: 1.75rem;
+	font-weight: normal;
+	color: #000;
+	margin: 2rem 0;
+}
+/************End About US**********/
+/*********************************/
+/**********Popular Section *************/
+
+.grid__item{
+	float: left;
+	margin-right: 1.7%;
+	width: 49.15%;
+	position: relative;
+	margin-bottom: 1.7%;
+}
+
+.grid__item:nth-of-type(2n){
+	margin-right: 0;
+}
+
+.grid__wrap{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+	transition: 0.5s;
+}
+
+.grid__wrap:hover{
+	background: rgba(0, 0, 0, 0.8);	
+}
+
+.grid__picture{
+	display: block;
+	max-width: 100%;
+}
+
+.grid__link{
+	color: #f4f4f4;
+	text-align: center;
+	font-size: 1.8125rem;
+
+}
+
+.grid__text{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+/************End Popular Section**********/
+/*********************************/
+/**********Our advantages*************/
+.icon-circle{
+	display: inline-block;
+	width: 6.25rem;
+	height: 6.25rem;
+	background:#ffb9b3; 
+	border-radius: 50%;
+
+}
+
+.adventage__item{
+	text-align:center;
+	width: 28%;
+	margin-right: 8%;
+}
+
+.adventage__item:last-child{
+	margin-right: 0;
+}
+
+.icon-circle__picture{
+	max-width: 100%;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.adventage{
+	display: flex;
+	flex-direction: row;
+} 
+
+.section__headline{
+	font-weight: bold;
+	font-size: 1.25rem;
+	margin: 0.8rem 0;
+}
+/************End Our advantages**********/
+/*********************************/
+/**********Footer*************/
+.page__row--footer{
+	background: #595959;
+	color: #fff;
+	font-size: 1rem;
+	margin-top: 4rem; 
+}
+.footer__copyright{
+	text-align: right;
+} 
+.footer_link{
+	color: #fff;
+	text-decoration: none;
+	font-size: 1rem;
+}
+.footer{
+	padding: 1.2rem;
+}
+/************End Footer**********/
+/*********************************/
+
+.button-nav{
+	width: 2.5rem;
+	height: 2.5rem;
+	cursor: pointer;
+	margin: 1rem 0;
+	background: none;
+	border: none;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	text-align: right;
+}
+
+.button-nav__line{
+	padding: 0;
+	width: 100%;
+	height: 2px;
+	background: #000;
+	display: block;
+	margin: 3px;
+}
+
+.nav__button{
+	display: none;
+}
+
